@@ -1,4 +1,4 @@
-/* <p align="center">
+<!-- <p align="center">
   <a href="https://polygant.net/opencex/" target="_blank">
     <img alt="OpenCEX Logo" width="500" src="https://github.com/Polygant/OpenCEX/blob/master/logo.png">
   </a>
@@ -10,7 +10,7 @@ Developed by <a href="https://polygant.net" target="_blank">Polygant</a>.
 
 <p align="center">
 <a href="https://a.65.109.204.172.sslip.io" target="_blank">Live demo</a> | <a href="https://polygant.notion.site/OpenCEX-Help-Center-8cf8c842bde947c3818a615a88ceef9c" target="_blank">OpenCEX documentation</a> | <a href="https://t.me/opencex" target="_blank">Telegram chat</a>
-</p> */
+</p> -->
 
 ## Main features.
 
@@ -29,10 +29,10 @@ Developed by <a href="https://polygant.net" target="_blank">Polygant</a>.
 <td><b>Minimum</b></td>
 <td><b>Recommended</b></td>
 </tr>
-<tr> /*
+<tr> <!--
 <td>CPU: 4 cores<br>RAM: 16 GB<br>Disks: 40 GB<br>OS: Ubuntu 22.04<br><br><a href="https://www.hetzner.com/cloud" target="_blank">https://www.hetzner.com/cloud</a></td>
 <td>CPU: 8 cores<br>RAM: 64 Gb<br>Disks: 2x1Tb NVMe SSD<br>OS: Ubuntu 22.04<br><br><a href="https://www.hetzner.com/dedicated-rootserver/ax51-nvme" target="_blank">https://www.hetzner.com/dedicated-rootserver/ax51-nvme</a></td>
- */
+ -->
 </tr>
 </table>
 
@@ -51,7 +51,7 @@ Developed by <a href="https://polygant.net" target="_blank">Polygant</a>.
 <tr><td>NUXT.JS</td><td>2.15.7</td><td>JS framework</td></tr>
 <tr><td>Bitcoin Core</td><td>latest</td><td>Bitcoin node</td></tr>
 </table>
-/*
+<!--
 ## Before installing:
 
 -   Watch the installation video [https://youtu.be/c-WnQkvBwf0](https://youtu.be/c-WnQkvBwf0)
@@ -68,7 +68,7 @@ Developed by <a href="https://polygant.net" target="_blank">Polygant</a>.
 -   OPTIONAL. For KYT you need Scorechain credentials ([https://www.scorechain.com/](https://www.scorechain.com/))
 -   OPTIONAL. For KYC you will need Sumsub credentials ([https://sumsub.com/](https://sumsub.com/))
     
-*/
+-->
 ## Installation
 
 You need to SSH into your server as root and run the following command:
@@ -94,7 +94,7 @@ You can open it by your domain name.
 **After installation, you need to download the file /app/openex/backend/save_to_self_and_delete.txt and delete it from the server.**
 
 **Mind that BTC node will take up to 30 hours to fully sync. BTC transactions sent to user addresses in this period will be collected and credited only after a full sync.**
-/*
+<!--
 ## Documentation
 -   [OpenCEX Help Center](https://www.notion.so/polygant/OpenCEX-Help-Center-8cf8c842bde947c3818a615a88ceef9c)
 -   [Admin panel Guide](https://docs.google.com/document/d/1VoBFEjzmGXzNHQYfvu8BYHvoSv9Sg73AV9wWGvsRJ04/edit#)
@@ -104,17 +104,17 @@ Become a partner: [hello@polygant.net](mailto:hello@polygant.net)
 
 ## Community
 Ask questions at the official community Telegram chat.
-*/
+-->
 ## Contributing
 Thanks for all your wonderful PRs, issues and ideas.
 You’re always welcome to join: check out our contribution guides, open issues and the Telegram chat.
-/*
+<!--
 ## Can I hire you guys?
 
 OpenCEX was created and backed by Polygant, and is supported through all the years. You can request a consultation or order web and mobile development services by Polygant, just visit our site. 😎
 
 Say hi: [hello@polygant.net](mailto:hello@polygant.net) . We will be happy to work with you!
-*/
+-->
 ## License
 Apache License, Version 2.0
 
