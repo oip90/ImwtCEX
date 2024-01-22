@@ -99,7 +99,12 @@ ADMIN_BASE_URL=botgetsettings
 ADMIN_USER=vasyaadmin
 ADMIN_MASTERPASS=>H@gx;YS(2qy%Y
 SUPPORT_EMAIL=support@imwt.me
-
+export PROJECT_NAME
+export DOMAIN
+export ADMIN_BASE_URL
+export ADMIN_USER
+export ADMIN_MASTERPASS
+export SUPPORT_EMAIL
 
 #TELEGRAM - telegram chat URL (i.e. opencex)
 #FACEBOOK - facebook page URL
@@ -155,6 +160,9 @@ echo -n "RECAPTCHA_SECRET*: "
 
 RECAPTCHA=6LdN3VYpAAAAAKKYWPebwu2tVTLsuXSY40--sGfV
 RECAPTCHA_SECRET=6LdN3VYpAAAAAOsUWXP0tvuuNpgNky6tXv-vUYpI
+
+export RECAPTCHA
+export RECAPTCHA_SECRET
 
 echo -n "TELEGRAM_CHAT_ID: "
 read TELEGRAM_CHAT_ID
@@ -212,6 +220,10 @@ echo -n "ETHERSCAN_KEY*: "
 INFURA_API_KEY="422466f064f64adf9899f257718890b0"
 INFURA_API_SECRET="a46326e8d0574b66bb9448fc7c4780e8"
 ETHERSCAN_KEY="WHKGQ7E15KQUAA2V9YNVF2V4ZVHECHY36Q"
+export INFURA_API_KEY
+export INFURA_API_SECRET
+export ETHERSCAN_KEY
+
 
 echo "-----------------------------------------------------------"
     read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
@@ -247,6 +259,9 @@ echo -n "ETH_SAFE_ADDR*: "
 
 BTC_SAFE_ADDR=bc1q4c8lgz2tymant6jmhcvha66yxr434vfhfqf6wh
 ETH_SAFE_ADDR=0x8F5cc16029E82a9160aF60Cf84bfD94e1eb45E11
+
+export BTC_SAFE_ADDR
+export ETH_SAFE_ADDR
 
 echo "-----------------------------------------------------------"
     read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
@@ -437,6 +452,12 @@ EMAIL_HOST_USER="noreply@imwt.me"
 EMAIL_HOST_PASSWORD="kiyASTV8"
 EMAIL_PORT="587"
 EMAIL_USE_TLS="False"
+
+export EMAIL_HOST
+export EMAIL_HOST_USER
+export EMAIL_HOST_PASSWORD
+export EMAIL_PORT
+export EMAIL_USE_TLS
 
 echo "-----------------------------------------------------------"
     read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
@@ -641,8 +662,8 @@ export AMQP_HOST
 export AMQP_PORT
 
 #echo "Bitcoin node credentials - user, password, server address and port"
-BTC_NODE_USER=opencex
-BTC_NODE_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
+BTC_NODE_USER=imwt
+BTC_NODE_PASS=126viuynpeR2 #$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 BTC_NODE_PORT=8332
 BTC_NODE_HOST=coins.lan
 export BTC_NODE_USER
