@@ -66,40 +66,29 @@ YOLLOPUKKI`"
 
 while true; do
 
-#echo -n "PROJECT_NAME* (i.e. SuperExchange): "
-#read PROJECT_NAME
-#export PROJECT_NAME
+echo -n "PROJECT_NAME* (i.e. SuperExchange): "
+read PROJECT_NAME
+export PROJECT_NAME
 
+echo -n "DOMAIN* (i.e. test.com): "
+read DOMAIN
+export DOMAIN
 
-#echo -n "DOMAIN* (i.e. test.com): "
-#read DOMAIN
-#export DOMAIN
+echo -n "ADMIN_BASE_URL* (i.e: admin): "
+read ADMIN_BASE_URL
+export ADMIN_BASE_URL
 
+echo -n "ADMIN_USER* (i.e: admin@exchange.net): "
+read ADMIN_USER
+export ADMIN_USER
 
-#echo -n "ADMIN_BASE_URL* (i.e: admin): "
-#read ADMIN_BASE_URL
-#export ADMIN_BASE_URL
+echo -n "ADMIN_MASTERPASS*: "
+read ADMIN_MASTERPASS
+export ADMIN_MASTERPASS
 
-#echo -n "ADMIN_USER* (i.e: admin@exchange.net): "
-#read ADMIN_USER
-#export ADMIN_USER
-
-#echo -n "ADMIN_MASTERPASS*: "
-#read ADMIN_MASTERPASS
-#export ADMIN_MASTERPASS
-
-#echo -n "SUPPORT_EMAIL: "
-#read SUPPORT_EMAIL
-#export SUPPORT_EMAIL
-
-
-PROJECT_NAME=IMWT.me
-DOMAIN=imwt.me
-ADMIN_BASE_URL=botgetsettings
-ADMIN_USER=vasyaadmin
-ADMIN_MASTERPASS=>H@gx;YS(2qy%Y
-SUPPORT_EMAIL=support@imwt.me
-
+echo -n "SUPPORT_EMAIL: "
+read SUPPORT_EMAIL
+export SUPPORT_EMAIL
 
 #TELEGRAM - telegram chat URL (i.e. opencex)
 #FACEBOOK - facebook page URL
@@ -146,15 +135,12 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "RECAPTCHA*: "
-#read RECAPTCHA
-#export RECAPTCHA
+read RECAPTCHA
+export RECAPTCHA
 
 echo -n "RECAPTCHA_SECRET*: "
-#read RECAPTCHA_SECRET
-#export RECAPTCHA_SECRET
-
-RECAPTCHA=6LdN3VYpAAAAAKKYWPebwu2tVTLsuXSY40--sGfV
-RECAPTCHA_SECRET=6LdN3VYpAAAAAOsUWXP0tvuuNpgNky6tXv-vUYpI
+read RECAPTCHA_SECRET
+export RECAPTCHA_SECRET
 
 echo -n "TELEGRAM_CHAT_ID: "
 read TELEGRAM_CHAT_ID
@@ -198,20 +184,16 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "INFURA_API_KEY*: "
-#read INFURA_API_KEY
-#export INFURA_API_KEY
+read INFURA_API_KEY
+export INFURA_API_KEY
 
 echo -n "INFURA_API_SECRET*: "
-#read INFURA_API_SECRET
-#export INFURA_API_SECRET
+read INFURA_API_SECRET
+export INFURA_API_SECRET
 
 echo -n "ETHERSCAN_KEY*: "
-#read ETHERSCAN_KEY
-#export ETHERSCAN_KEY
-
-INFURA_API_KEY="422466f064f64adf9899f257718890b0"
-INFURA_API_SECRET="a46326e8d0574b66bb9448fc7c4780e8"
-ETHERSCAN_KEY="WHKGQ7E15KQUAA2V9YNVF2V4ZVHECHY36Q"
+read ETHERSCAN_KEY
+export ETHERSCAN_KEY
 
 echo "-----------------------------------------------------------"
     read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
@@ -238,15 +220,12 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "BTC_SAFE_ADDR*: "
-#read BTC_SAFE_ADDR
-#export BTC_SAFE_ADDR
+read BTC_SAFE_ADDR
+export BTC_SAFE_ADDR
 
 echo -n "ETH_SAFE_ADDR*: "
-#read ETH_SAFE_ADDR
-#export ETH_SAFE_ADDR
-
-BTC_SAFE_ADDR=bc1q4c8lgz2tymant6jmhcvha66yxr434vfhfqf6wh
-ETH_SAFE_ADDR=0x8F5cc16029E82a9160aF60Cf84bfD94e1eb45E11
+read ETH_SAFE_ADDR
+export ETH_SAFE_ADDR
 
 echo "-----------------------------------------------------------"
     read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
