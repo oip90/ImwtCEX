@@ -655,7 +655,7 @@ echo "-----------------------------------------------------------"
 done
 
 #echo "Instance name"
-INSTANCE_NAME='imwt' #######??????
+INSTANCE_NAME='opencex' #######??????
 export INSTANCE_NAME
 
 #echo "Postgres credentials - user, database name, password, server address and port"
