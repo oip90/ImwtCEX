@@ -412,24 +412,31 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "EMAIL_HOST*: "
-read EMAIL_HOST
-export EMAIL_HOST
+#read EMAIL_HOST
+#export EMAIL_HOST
 
 echo -n "EMAIL_HOST_USER*: "
-read EMAIL_HOST_USER
-export EMAIL_HOST_USER
+#read EMAIL_HOST_USER
+#export EMAIL_HOST_USER
 
 echo -n "EMAIL_HOST_PASSWORD*: "
-read EMAIL_HOST_PASSWORD
-export EMAIL_HOST_PASSWORD
+#read EMAIL_HOST_PASSWORD
+#export EMAIL_HOST_PASSWORD
 
 echo -n "EMAIL_PORT*: "
-read EMAIL_PORT
-export EMAIL_PORT
+#read EMAIL_PORT
+#export EMAIL_PORT
 
 echo -n "EMAIL_USE_TLS* (True/False): "
-read EMAIL_USE_TLS
-export EMAIL_USE_TLS
+#read EMAIL_USE_TLS
+#export EMAIL_USE_TLS
+
+
+EMAIL_HOST="smtp.imwt.me"
+EMAIL_HOST_USER="noreply@imwt.me"
+EMAIL_HOST_PASSWORD="kiyASTV8"
+EMAIL_PORT="587"
+EMAIL_USE_TLS="False"
 
 echo "-----------------------------------------------------------"
     read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
