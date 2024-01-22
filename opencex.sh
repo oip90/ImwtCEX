@@ -158,8 +158,8 @@ echo -n "RECAPTCHA_SECRET*: "
 #read RECAPTCHA_SECRET
 #export RECAPTCHA_SECRET
 
-RECAPTCHA=6LdN3VYpAAAAAKKYWPebwu2tVTLsuXSY40--sGfV
-RECAPTCHA_SECRET=6LdN3VYpAAAAAOsUWXP0tvuuNpgNky6tXv-vUYpI
+RECAPTCHA="6LdN3VYpAAAAAKKYWPebwu2tVTLsuXSY40--sGfV"
+RECAPTCHA_SECRET="6LdN3VYpAAAAAOsUWXP0tvuuNpgNky6tXv-vUYpI"
 
 export RECAPTCHA
 export RECAPTCHA_SECRET
@@ -257,8 +257,8 @@ echo -n "ETH_SAFE_ADDR*: "
 #read ETH_SAFE_ADDR
 #export ETH_SAFE_ADDR
 
-BTC_SAFE_ADDR=bc1q4c8lgz2tymant6jmhcvha66yxr434vfhfqf6wh
-ETH_SAFE_ADDR=0x8F5cc16029E82a9160aF60Cf84bfD94e1eb45E11
+BTC_SAFE_ADDR="bc1q4c8lgz2tymant6jmhcvha66yxr434vfhfqf6wh"
+ETH_SAFE_ADDR="0x8F5cc16029E82a9160aF60Cf84bfD94e1eb45E11"
 
 export BTC_SAFE_ADDR
 export ETH_SAFE_ADDR
@@ -291,17 +291,24 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "ENABLED_BNB (True/False): "
-read ENABLED_BNB
+#read ENABLED_BNB
+
+ENABLED_BNB="True"
 export ENABLED_BNB
 
 if [ "$ENABLED_BNB" = "True" ]; then
 
 echo -n "BSCSCAN_KEY*: "
 read BSCSCAN_KEY
+
+
+BSCSCAN_KEY="G8I1XP2HI5AW8A8CMGNYU2CNNFNHFTHU8X"
 export BSCSCAN_KEY
 
 echo -n "BNB_SAFE_ADDR*: "
-read BNB_SAFE_ADDR
+#read BNB_SAFE_ADDR
+
+BNB_SAFE_ADDR="0x8F5cc16029E82a9160aF60Cf84bfD94e1eb45E11"
 export BNB_SAFE_ADDR
 
 
@@ -339,17 +346,23 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "ENABLED_TRON (True/False): "
-read ENABLED_TRON
+#read ENABLED_TRON
+
+ENABLED_TRON="True"
 export ENABLED_TRON
 
 if [ "$ENABLED_TRON" = "True" ]; then
 
 echo -n "TRONGRID_API_KEY*: "
-read TRONGRID_API_KEY
+#read TRONGRID_API_KEY
+
+TRONGRID_API_KEY="d623d66c-cfd3-4996-8556-1e2b6b77aba3"
 export TRONGRID_API_KEY
 
 echo -n "TRX_SAFE_ADDR*: "
-read TRX_SAFE_ADDR
+#read TRX_SAFE_ADDR
+
+TRX_SAFE_ADDR="TA3ymV1VoLauf7s6P23Wr3CmCnV6vFtP4v"
 export TRX_SAFE_ADDR
 
 
@@ -383,7 +396,9 @@ YOLLOPUKKI`"
 while true; do
 
 echo -n "ENABLED_MATIC (True/False): "
-read ENABLED_MATIC
+#read ENABLED_MATIC
+
+ENABLED_MATIC="True"
 export ENABLED_MATIC
 COMMON_TASKS_MATIC=false
 export COMMON_TASKS_MATIC
@@ -393,11 +408,15 @@ COMMON_TASKS_MATIC=true
 export COMMON_TASKS_MATIC
 
 echo -n "POLYGONSCAN_KEY*: "
-read POLYGONSCAN_KEY
+#read POLYGONSCAN_KEY
+
+POLYGONSCAN_KEY="CKHA31FZ8MYHXTMPYEW7AD992C6WJ78C4F"
 export POLYGONSCAN_KEY
 
 echo -n "MATIC_SAFE_ADDR*: "
-read MATIC_SAFE_ADDR
+#read MATIC_SAFE_ADDR
+
+MATIC_SAFE_ADDR="0x8F5cc16029E82a9160aF60Cf84bfD94e1eb45E11"
 export MATIC_SAFE_ADDR
 
 fi
@@ -636,7 +655,7 @@ echo "-----------------------------------------------------------"
 done
 
 #echo "Instance name"
-INSTANCE_NAME='opencex'
+INSTANCE_NAME='imwt' #######??????
 export INSTANCE_NAME
 
 #echo "Postgres credentials - user, database name, password, server address and port"
