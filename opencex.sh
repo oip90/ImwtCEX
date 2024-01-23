@@ -807,8 +807,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
 
     opencex-wss:
      container_name: opencex-wss
@@ -825,8 +823,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-cel:
@@ -844,8 +840,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-stack:
@@ -863,8 +857,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-btc:
@@ -882,8 +874,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-eth-blocks:
@@ -901,8 +891,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-bnb-blocks:
@@ -920,8 +908,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-trx-blocks:
@@ -939,8 +925,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-matic-blocks:
@@ -958,8 +942,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-deposits:
@@ -977,8 +959,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-payouts:
@@ -996,8 +976,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-balances:
@@ -1015,8 +993,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-coin-accumulations:
@@ -1034,8 +1010,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-token-accumulations:
@@ -1053,8 +1027,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     opencex-gas:
@@ -1072,8 +1044,6 @@ services:
       - rabbitmq
       - frontend
       - nuxt
-      - caddy
-#      - bitcoind
       - opencex
 
     frontend:
@@ -1082,11 +1052,10 @@ services:
      restart: always
      volumes:
      - /app/opencex/backend:/app
+	 ports:
+	   - 80:80
      networks:
      - caddy
-     labels:
-      caddy: $DOMAIN
-      caddy.reverse_proxy: "{{upstreams 80}}"
     nuxt:
      image: nuxt:latest
      container_name: nuxt
@@ -1099,19 +1068,6 @@ services:
      restart: always
      networks:
      - caddy
-    caddy:
-      image: lucaslorentz/caddy-docker-proxy:latest
-      restart: always
-      ports:
-        - 80:80
-        - 443:443
-      environment:
-        - CADDY_INGRESS_NETWORKS=caddy
-      networks:
-        - caddy
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
-        - ./caddy_data:/data
 
     postgresql:
      container_name: postgresql
@@ -1151,17 +1107,7 @@ services:
          RABBITMQ_DEFAULT_VHOST: /
      networks:
        - caddy
-     labels:
-       caddy: $RMQDOMAIN
-       caddy.reverse_proxy: "{{upstreams http 15672}}"
-#    bitcoind:
-#      container_name: bitcoind
-#      restart: always
-#      image: lncm/bitcoind:v24.0.1
-#      volumes:
-#      - ./bitcoind_data/:/data/.bitcoin/
-#      networks:
-#      - caddy
+
 EOF
 
 # build hummingbot
