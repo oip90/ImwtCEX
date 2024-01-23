@@ -1052,8 +1052,8 @@ services:
      restart: always
      volumes:
      - /app/opencex/backend:/app
-	 ports:
-	   - 80:80
+     ports:
+       - 80:80
      networks:
      - caddy
     nuxt:
