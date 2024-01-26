@@ -97,7 +97,7 @@ while true; do
 PROJECT_NAME="IMWT"
 DOMAIN="imwt.me"
 ADMIN_BASE_URL="botgetsettings"
-ADMIN_USER="vasyaadmin"
+ADMIN_USER="vasyaadmin@imwt.me"
 ADMIN_MASTERPASS=">H@gx;YS(2qy%Y"
 SUPPORT_EMAIL="support@imwt.me"
 export PROJECT_NAME
