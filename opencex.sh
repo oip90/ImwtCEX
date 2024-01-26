@@ -38,7 +38,8 @@ at the end of each parameter block you will have the opportunity
 to re-enter the parameters.
 
 * is for the required field. 
-		  
+echo "If you have a certificate copy it to /app/opencex/backend/cert"
+ 
 YOLLOPUKKI`"
 
 read -p "Press enter to continue"
