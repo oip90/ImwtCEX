@@ -1055,6 +1055,7 @@ services:
      - /app/opencex/backend:/app
      ports:
        - 80:80
+       - 443:443
      networks:
      - caddy
     nuxt:
