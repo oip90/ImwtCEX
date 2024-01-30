@@ -22,6 +22,7 @@ git clone  https://github.com/oip90/OpenCEXF-backend.git ./backend
 git clone  https://github.com/oip90/OpenCEXF-frontend.git ./frontend
 git clone  https://github.com/oip90/OpenCEXF-static.git ./nuxt
 git clone  https://github.com/oip90/OpenCEXF-JS-admin.git ./admin
+git clone  https://github.com/oip90/hummingbot.git
 
 echo "`cat <<YOLLOPUKKI
 
@@ -125,13 +126,13 @@ export LINKEDIN
 export LOGO
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 echo "`cat <<YOLLOPUKKI
@@ -181,13 +182,13 @@ export TELEGRAM_BOT_TOKEN
 # export CAPTCHA_ALLOWED_IP_MASK
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 echo "`cat <<YOLLOPUKKI
@@ -227,13 +228,13 @@ export ETHERSCAN_KEY
 
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 echo "`cat <<YOLLOPUKKI
@@ -265,13 +266,13 @@ export BTC_SAFE_ADDR
 export ETH_SAFE_ADDR
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 echo "`cat <<YOLLOPUKKI
@@ -316,13 +317,13 @@ export BNB_SAFE_ADDR
 fi
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 
@@ -370,13 +371,13 @@ export TRX_SAFE_ADDR
 fi
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 echo "`cat <<YOLLOPUKKI
@@ -423,13 +424,13 @@ export MATIC_SAFE_ADDR
 fi
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 
@@ -480,13 +481,13 @@ export EMAIL_PORT
 export EMAIL_USE_TLS
 
 echo "-----------------------------------------------------------"
-    read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
-    case $YESORNO in
-        [Yy]* ) break;;
-        [Nn]* ) echo "Re-enter the parameters.";;
-        * ) break;;
-    esac
-done
+    # read -p "IS EVERYTHING CORRECT? (y or n)" YESORNO
+    # case $YESORNO in
+        # [Yy]* ) break;;
+        # [Nn]* ) echo "Re-enter the parameters.";;
+        # * ) break;;
+    # esac
+# done
 
 
 echo "`cat <<YOLLOPUKKI
