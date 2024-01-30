@@ -132,6 +132,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
@@ -188,6 +189,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
@@ -234,6 +236,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
@@ -272,6 +275,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
@@ -323,6 +327,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
@@ -377,6 +382,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
@@ -430,6 +436,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
+	break;;
  done
 
 
