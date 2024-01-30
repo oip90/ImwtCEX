@@ -430,7 +430,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
-# done
+ done
 
 
 
@@ -487,7 +487,7 @@ echo "-----------------------------------------------------------"
         # [Nn]* ) echo "Re-enter the parameters.";;
         # * ) break;;
     # esac
-# done
+ done
 
 
 echo "`cat <<YOLLOPUKKI
