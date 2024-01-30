@@ -1118,6 +1118,7 @@ if [ "$IS_HUMMINGBOT_ENABLED" = "True" ]; then
 cd /app/opencex || exit
 git clone  https://github.com/oip90/hummingbot.git ./hmbot
 cd ./hmbot
+chmod 666 -R /app/opencex/hmbot/bin
 docker build -t hummingbot:latest -f Dockerfile --target=release .
 cat << EOF >> /app/opencex/docker-compose.yml
     hummingbot:
