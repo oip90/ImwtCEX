@@ -97,7 +97,7 @@ while true; do
 
 PROJECT_NAME="IMWT"
 DOMAIN="imwt.me"
-ADMIN_BASE_URL="botgetsettings"
+ADMIN_BASE_URL="maintenancezone"
 ADMIN_USER="vasyaadmin@imwt.me"
 ADMIN_MASTERPASS=">H@gx;YS(2qy%Y"
 SUPPORT_EMAIL="support@imwt.me"
@@ -113,9 +113,9 @@ export SUPPORT_EMAIL
 #TWITTER - twitter page URL
 #LINKEDIN - linkedin page URL
 
-TELEGRAM=imwt.me
+TELEGRAM=imwt_en
 FACEBOOK=imwt
-TWITTER=imwt.me
+TWITTER=imwtme
 LINKEDIN=imwt
 LOGO=
 
@@ -665,12 +665,12 @@ echo "-----------------------------------------------------------"
 done
 
 #echo "Instance name"
-INSTANCE_NAME='opencex' #######??????
+INSTANCE_NAME='imwt' #######??????
 export INSTANCE_NAME
 
 #echo "Postgres credentials - user, database name, password, server address and port"
 DB_NAME=opencex
-DB_USER=opencex
+DB_USER=imwt
 DB_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 DB_HOST=postgresql
 DB_PORT=5432
@@ -681,7 +681,7 @@ export DB_HOST
 export DB_PORT
 
 #echo "RabbitMQ credentials - user, password, server address and port"
-AMQP_USER=opencex
+AMQP_USER=imwt
 AMQP_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 AMQP_HOST=rabbitmq
 AMQP_PORT=5672
