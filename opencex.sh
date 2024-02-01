@@ -98,7 +98,7 @@ while true; do
 PROJECT_NAME="IMWT"
 DOMAIN="imwt.me"
 ADMIN_BASE_URL="maintenancezone"
-ADMIN_USER="vasyaadmin@imwt.me"
+ADMIN_USER="vp@imwt.me"
 ADMIN_MASTERPASS=">H@gx;YS(2qy%Y"
 SUPPORT_EMAIL="support@imwt.me"
 export PROJECT_NAME
@@ -692,9 +692,9 @@ export AMQP_PORT
 
 #echo "Bitcoin node credentials - user, password, server address and port"
 BTC_NODE_USER=imwt
-BTC_NODE_PASS=126viuynpeR2 #$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
+BTC_NODE_PASS=De8kZ9BL3QG2VVXXrqzC #$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 BTC_NODE_PORT=8332
-BTC_NODE_HOST=coins.lan
+BTC_NODE_HOST=coins
 export BTC_NODE_USER
 export BTC_NODE_PASS
 export BTC_NODE_PORT
