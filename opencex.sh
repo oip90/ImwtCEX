@@ -95,7 +95,7 @@ while true; do
 #export SUPPORT_EMAIL
 
 
-PROJECT_NAME="IMWT"
+PROJECT_NAME="opencex"
 DOMAIN="imwt.me"
 ADMIN_BASE_URL="maintenancezone"
 ADMIN_USER="vp@imwt.me"
