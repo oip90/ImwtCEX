@@ -670,7 +670,7 @@ export INSTANCE_NAME
 
 #echo "Postgres credentials - user, database name, password, server address and port"
 DB_NAME=opencex
-DB_USER=imwt
+DB_USER=opencex
 DB_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 DB_HOST=postgresql
 DB_PORT=5432
