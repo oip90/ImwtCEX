@@ -693,7 +693,7 @@ export AMQP_HOST
 export AMQP_PORT
 
 #echo "Bitcoin node credentials - user, password, server address and port"
-BTC_NODE_USER=opencex
+BTC_NODE_USER=imwt
 BTC_NODE_PASS=nVWHs-r8A77i #$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 BTC_NODE_PORT=8332
 BTC_NODE_HOST=coins
