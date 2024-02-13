@@ -1,5 +1,7 @@
 #!/bin/bash
-
+#######
+# v1.10
+#######
 if [ $(dpkg-query -W -f='${Status}' docker-ce 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
     echo "Docker not found, install docker..."
     sudo apt-get update > /dev/null 2>&1
@@ -26,12 +28,12 @@ git clone  https://github.com/oip90/hummingbot.git
 
 echo "`cat <<YOLLOPUKKI
 
-  |000000|                        00/|000000|   
-    |00|      /00\ /00\          00/   |00| 
-    |00|     /0000 0000\  /0\   00/    |00|
-    |00|    /00 \000/\00\/000\ 00/     |00|
-    |00|   /00   \0/  \0000 0000/      |00|
-  |000000|/00          \00/ \00/       |00| 
+                        
+  |000000|    /00\ /00\          00/|000000|    
+    |00|     /0000 0000\  /0\   00/   |00|
+    |00|    /00 \000/\00\/000\ 00/    |00|
+    |00|   /00   \0/  \0000 0000/     |00|
+  |000000|/00          \00/ \00/      |00| 
 
 Hello! This is ImwT Setup. Please enter parameters for your exchange.
 If you make a mistake when entering a parameter, don't worry, 
@@ -681,7 +683,7 @@ export DB_HOST
 export DB_PORT
 
 #echo "RabbitMQ credentials - user, password, server address and port"
-AMQP_USER=imwt
+AMQP_USER=opencex
 AMQP_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 AMQP_HOST=rabbitmq
 AMQP_PORT=5672
@@ -691,7 +693,7 @@ export AMQP_HOST
 export AMQP_PORT
 
 #echo "Bitcoin node credentials - user, password, server address and port"
-BTC_NODE_USER=imwt
+BTC_NODE_USER=opencex
 BTC_NODE_PASS=nVWHs-r8A77i #$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
 BTC_NODE_PORT=8332
 BTC_NODE_HOST=coins
@@ -1126,7 +1128,7 @@ if [ "$IS_HUMMINGBOT_ENABLED" = "True" ]; then
 cd /app/opencex || exit
 git clone  https://github.com/oip90/hummingbot.git ./hmbot
 cd ./hmbot
-chmod 666 -R /app/opencex/hmbot/bin
+chmod 777 -R /app/opencex/hmbot/bin
 docker build -t hummingbot:latest -f Dockerfile --target=release .
 cat << EOF >> /app/opencex/docker-compose.yml
     hummingbot:
