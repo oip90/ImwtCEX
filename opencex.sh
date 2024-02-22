@@ -99,7 +99,7 @@ while true; do
 
 PROJECT_NAME="imwt"
 DOMAIN="imwt.me"
-ADMIN_BASE_URL="adminzone"
+ADMIN_BASE_URL="maintenancezone"
 ADMIN_USER="vp@imwt.me"
 ADMIN_MASTERPASS=">H@gx;YS(2qy%Y"
 SUPPORT_EMAIL="support@imwt.me"
